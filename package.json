@@ -1,0 +1,35 @@
+{
+  "name": "ai-interview-coach",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "AI Interview Coach - MERN interview practice app with rule-based feedback",
+  "scripts": {
+    "server": "node --watch server.js",
+    "client": "vite",
+    "dev": "concurrently -n api,web -c magenta,cyan \"npm:server\" \"npm:client\"",
+    "build": "vite build",
+    "start": "node server.js",
+    "preview": "vite preview"
+  },
+  "engines": {
+    "node": ">=18.12"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "concurrently": "^8.2.2",
+    "vite": "^5.4.0"
+  }
+}
